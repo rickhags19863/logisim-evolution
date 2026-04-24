@@ -45,6 +45,9 @@ tasks.named('test') {
     useJUnitPlatform()
     testLogging {
         events 'passed', 'skipped', 'failed'
+        // Show full exception info for failed tests — helpful when debugging locally
+        exceptionFormat 'full'
+        showStandardStreams = false
     }
 }
 
