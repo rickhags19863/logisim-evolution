@@ -47,7 +47,8 @@ tasks.named('test') {
         events 'passed', 'skipped', 'failed'
         // Show full exception info for failed tests — helpful when debugging locally
         exceptionFormat 'full'
-        showStandardStreams = false
+        // Also show stdout/stderr during tests so I can see println debug output
+        showStandardStreams = true
     }
 }
 
